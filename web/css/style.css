@@ -1,0 +1,87 @@
+div.photo-block{
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+
+div.photo-title{
+    font-size: 140%;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+div.photo-score{
+    font-family: monospace;
+    
+}
+
+img.photo-image{ /* para que se vea entera en pantallas pequenias*/
+    height: auto; 
+    width:100%;
+}
+
+body.dark{ /*this adds background color and text color*/
+    background-color: rgb(10, 17, 46);
+    color: rgb(149, 187, 10);
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+input,select {
+    background-color: purple;
+    border-color: red;
+    color: white;
+}
+
+.input-group > label { /*targets all label elements that are direct children of elements with the class input-group*/
+    display: inline-block;
+    width : 200px;
+    text-align: right;
+}
+
+.input-group{
+    margin-bottom: 0.5em;
+/*The em unit is relative to the font size of the element, so 0.5em is equal to half the element's font size.*/    
+}
+
+div.title-block{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #5a0000;
+}
+    /*el ultimo y los dos siguientes afectan el header.html*/
+#title {
+    font-size: 300%;
+    text-decoration: none;
+    color: gray;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    font-size: 120%;
+    font-style: italic;
+    color: #BBBBBB;
+    font-family: monospace;
+}
+
+div.navigation>a{
+    color:yellow;
+    font-size: 120%;
+    background-color: #555555;
+    font-family: monospace;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.upload-link{
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
