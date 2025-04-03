@@ -186,18 +186,19 @@ div.bar>a{
 }*/
 
 
-/*______________________________________   REGISTER      ______________________*/
+/*______________________________________   LOGIN      ______________________*/
 /*CODE FOR LOGIN , COPPIED FROM BOOTSTRAP----------------------------------------------------------------------------------*/
-
+div.login{
+    text-align: center;
+    margin: 1% auto;
+}
 
 label.mr-1{ /*affects the word Gender*/
     font-size: larger;
-    width: 20%;
-   
 }
 
 label.btn-outline-secondary {
-    width: 30%;
+    width: auto;
     font-size: larger;
 }
 
@@ -208,20 +209,24 @@ div.form-body {
     height: 100%;
     background-color: #0c171f;
     overflow: hidden;
-    display: block;
 }
 
-.form-holder{
-    min-height: 100vh;
-}
 
+
+
+.form-holder {
+      text-align: center;
+      min-height: 100vh;
+      align-items: ;
+    
+}
 
 .form-holder .form-content {
     position: relative;
     text-align: center;
     align-items: center;
-    padding: 5px;
-    margin-top: 100px;
+    padding: 50px;
+    margin: 0;
 }
 
 .form-content .form-items {
@@ -230,21 +235,23 @@ div.form-body {
     margin-top: 2%;
     padding-top: 2%;
     padding-left: 3%;
-    padding-right: 3%;
     padding-bottom: 2%;
     display: inline-block;
     width: 50%;
     height: 50%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 70px;   /* eso hace que el border sea curvo */
     text-align: left;
-
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .form-content h3 {
-    color: #fcfcfc;
-    text-align: center;
+    color: #fff;
+    text-align: left;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
@@ -254,11 +261,11 @@ div.form-body {
 
 .form-content p {
     color: #f8f8f8;
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     font-weight: 300;
-    line-height: 30px;
-    margin-bottom: 5px;
+    line-height: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -341,136 +348,4 @@ div.form-body {
     width: 150px;
 }
 
-/*___________________________________________________________________________*/
-/* ===================================================================== */
-/* LOGIN FORM SPECIFIC STYLES (using log-* classes)                     */
-/* ===================================================================== */
-
-.log-body { /* Optional: Specific styles for the login page body wrapper */
-    font-family: 'Poppins', sans-serif; /* Ensure Poppins is linked */
-    font-weight: 500;
-    min-height: 100vh; 
-    background-color: #0c171f; /* Same bg as original form-body */
-    overflow-x: hidden; 
-    padding-top: 20px; /* Add some padding */
-    padding-bottom: 20px;
-}
-
-.log-holder { /* Styles based on original .form-holder */
-      text-align: center; /* Helps if content inside isn't full width */
-      /* Removed min-height, padding etc. - handled by log-body/log-content */
-}
-
-.log-holder .log-content { /* Styles based on original .form-content */
-    position: relative;
-    text-align: center; 
-    padding: 40px; /* Adjusted padding */
-    margin: 0 auto; 
-    /* max-width: 500px; */ /* Let Bootstrap column control width */
-}
-
-.log-holder .log-items { /* Styles based on original .form-items */
-    border: 6px solid #056db4; /* Changed border color for distinction (Blue) */
-    margin-top: 2%;
-    padding: 30px 40px; /* Adjusted padding */
-    display: inline-block; 
-    width: 100%; /* Take full width of Bootstrap column */
-    max-width: 100%; /* Ensure it fits */
-    -webkit-border-radius: 50px; /* Adjusted border radius */
-    -moz-border-radius: 50px;
-    border-radius: 50px;   
-    text-align: left;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(0, 0, 0, 0.1); /* Optional: Slight background */
-}
-
-.log-content h3 { /* Styles based on original .form-content h3 */
-    color: #fff;
-    text-align: center; /* Center Login heading */
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 15px; /* Adjusted margin */
-}
-
-.log-content p { /* Styles based on original .form-content p */
-    color: #f8f8f8;
-    text-align: center; /* Center paragraph */
-    font-size: 18px; /* Adjusted size */
-    font-weight: 300;
-    line-height: 1.4; 
-    margin-bottom: 30px;
-}
-
-.log-content label, /* Includes .form-check-label via Bootstrap */
-.log-content .was-validated .form-check-input:invalid~.form-check-label, 
-.log-content .was-validated .form-check-input:valid~.form-check-label {
-    color: #fff; /* Ensure label text is white */
-}
-
-/* Input styling scoped to login form */
-.log-content input.form-control[type=text], 
-.log-content input.form-control[type=password], 
-.log-content input.form-control[type=email], 
-.log-content select.form-select { /* Target Bootstrap classes within log-content */
-    /* Keep Bootstrap's default look or override slightly */
-    /* Example override: */
-     background-color: #ffffff; 
-     color: #495057; 
-     border: 1px solid #ced4da;
-     border-radius: 6px;
-    /* Remove the margin-top from original rules if using mb-3 on columns */
-}
-
-/* Button styling scoped to login form */
-.log-button .btn-primary { /* Target Bootstrap button class within log-button */
-    background-color: #0d6efd; /* Bootstrap primary blue */
-    border-color: #0d6efd;
-    outline: none;
-    border: 0px;
-    box-shadow: none;
-    width: auto; /* Let padding control width */
-    min-width: 120px; /* Set minimum width */
-    padding: 10px 25px; /* Adjust padding */
-    font-size: 16px; 
-    cursor: pointer; 
-    /* Removed margin-left */
-}
-
-.log-button .btn-primary:hover, 
-.log-button .btn-primary:focus, 
-.log-button .btn-primary:active {
-    background-color: #0b5ed7; /* Darker blue on hover */
-    border-color: #0a58ca;
-    outline: none !important;
-    border: none !important;
-    box-shadow: none;
-}
-
-/* Validation feedback styling scoped */
-.log-content .invalid-feedback {
-    color: #ff606e;
-    /* display: none; */ /* Bootstrap handles display */
-    width: 100%;
-    margin-top: .25rem;
-    font-size: .875em;
-    text-align: left; /* Align feedback text left */
-}
-
-.log-content .valid-feedback {
-   color: #2acc80;
-   /* display: none; */ /* Bootstrap handles display */
-   width: 100%;
-   margin-top: .25rem;
-   font-size: .875em;
-   text-align: left; /* Align feedback text left */
-}
-
-/* Keep .mv-up global if used elsewhere, or scope if only for login gender */
-/* .log-content .mv-up { ... } */ 
-
-/* ===================================================================== */
-
-.form-body {
-    overflow-y: hidden; /* Hide vertical scrollbar */
-}
+/*__________________________________________________________________*/

@@ -1,2 +1,96 @@
 <h1>THIS IS AN EMPTY PAGE TO IDENTIFY WHAT FOLDER IM WORKING ON -
      TEKKERA ELECTRONICS</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <title>Example page</title>
+          <link rel="icon" href="/images/favicon.ico">
+          <link rel="stylesheet" href="/css/style.css">
+          <script src="web\js\utils\include.js"></script>
+
+          <meta name="viewport"
+               content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <link rel="stylesheet" href="/css/bootstrap.min.css">
+          <link rel="stylesheet" href="/css/font-awesome.min.css">
+          <script src="/js/libs/bootstrap.min.js"></script>
+     </head>
+
+     <body class="dark">
+          <div id="page-header"></div>
+          <div id="nav-bar"></div>
+          <div class="formulario">
+               <form class="requires-validation">
+                    <div class="input-group">
+                         <label for="firstname-input">First name:</label>
+                         <input type="text" id="firstname-input"
+                              name="firstName"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="lastname-input">Last name:</label>
+                         <input type="text" id="lastname-input" name="lastName"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="email-input">Email:</label>
+                         <input type="email" id="email-input" name="email"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="telephone-input">Telephone:</label>
+                         <select name="prefix" id="prefix-input">
+                              <option value="34">Spain (+34)</option>
+                              <option value="1">USA (+1)</option>
+                              <option value="other">Other</option>
+                         </select>
+
+                         <input type="text" id="telephone-input"
+                              name="telephone"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="select-input">Select element from a
+                              list:</label>
+                         <select  required>
+                              <option selected disabled value> select an
+                                   option</option>
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                         </select>
+
+                    </div>
+                    <div class="input-group">
+                         <label for="username-input">Username:</label>
+                         <input type="text" id="username-input" name="username"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="password-input">Password:</label>
+                         <input type="password" id="password-input"
+                              name="password"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <label for="password2-input">Repeat your
+                              password:</label>
+                         <input type="password" id="password2-input"
+                              name="password2"
+                              required>
+                    </div>
+                    <div class="input-group">
+                         <input type="submit">
+                    </div>
+               </form>
+          </div>
+          <script>
+         include("header.html","#page-header");
+         include("nav.html","#nav-bar");
+     </script>
+     </body>
+
+</html>

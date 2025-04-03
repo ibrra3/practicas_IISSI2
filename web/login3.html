@@ -3,6 +3,7 @@
     <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
     <script src="web\js\utils\include.js"></script>
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -12,26 +13,20 @@
 <body class="form-body">
     <div id="page-header"></div>
     <div id="nav-bar"></div>
-
     <div class="form-body">
-        <div class="row">
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <h3>SIGN UP!</h3>
-                        <p>Fill in the data below.</p>
-                        <form class="requires-validation">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input class="form-control" type="text"
-                                        name="firstName"
-                                        placeholder="First Name"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
+        <div class="login">
+            <div class="row">
+                
+                <div class="form-holder" id="login-container">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Login</h3>
+                            <p>Fill in the data below.</p>
+                            <form class="requires-validation">
 
+                                <div class="col-md-6">
                                     <input class="form-control" type="text"
-                                        name="lastName" placeholder="Last Name"
+                                        name="name" placeholder="Full Name"
                                         required>
                                     <div class="valid-feedback">Username field
                                         is
@@ -39,14 +34,7 @@
                                     <div class="invalid-feedback">Username field
                                         cannot be blank!</div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input class="form-control" type="text"
-                                        id="username-input"
-                                        name="username" placeholder="username"
-                                        required>
-                                </div>
+
                                 <div class="col-md-6">
                                     <input class="form-control" type="email"
                                         name="email"
@@ -57,49 +45,8 @@
                                     <div class="invalid-feedback">Email field
                                         cannot
                                         be blank!</div>
-
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input class="form-control"
-                                        type="Password"
-                                        name="password" placeholder="Password"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="form-control" type="password"
-                                        name="password"
-                                        placeholder="Repeat Password"
-                                        required>
-                                    <div class="valid-feedback">Password field
-                                        is
-                                        valid!</div>
-                                    <div class="invalid-feedback">Password field
-                                        cannot be blank!</div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-
-                                    <select name="prefix" id="prefix-input">
-                                        <option selected disabled
-                                            value>prefijo</option>
-                                        <option value="34">Spain (+34)</option>
-                                        <option value="1">USA (+1)</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" id="telephone-input"
-                                        name="telephone" placeholder="telefono"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="row">
                                 <div class="col-md-6">
                                     <select class="form-select mt-3" required>
                                         <option selected disabled
@@ -114,6 +61,18 @@
                                         a
                                         position!</div>
                                 </div>
+
+                                <div class="col-md-6">
+                                    <input class="form-control" type="password"
+                                        name="password" placeholder="Password"
+                                        required>
+                                    <div class="valid-feedback">Password field
+                                        is
+                                        valid!</div>
+                                    <div class="invalid-feedback">Password field
+                                        cannot be blank!</div>
+                                </div>
+
                                 <div class="col-md-6 mt-3">
                                     <label class="mb-3 mr-1"
                                         for="gender">Gender:
@@ -146,21 +105,25 @@
                                     <div class="invalid-feedback mv-up">Please
                                         select a gender!</div>
                                 </div>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox"
-                                    value id="invalidCheck" required>
-                                <label class="form-check-label">I confirm that
-                                    all data are correct</label>
-                                <div class="invalid-feedback">Please confirm
-                                    that the entered data are all correct!</div>
-                            </div>
 
-                            <div class="form-button mt-3">
-                                <button id="submit" type="submit"
-                                    class="btn btn-primary">Sign Up</button>
-                            </div>
-                        </form>
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox"
+                                        value id="invalidCheck" required>
+                                    <label class="form-check-label">I confirm
+                                        that
+                                        all data are correct</label>
+                                    <div class="invalid-feedback">Please confirm
+                                        that the entered data are all
+                                        correct!</div>
+                                </div>
+
+                                <div class="form-button mt-3">
+                                    <button id="submit" type="submit"
+                                        class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
