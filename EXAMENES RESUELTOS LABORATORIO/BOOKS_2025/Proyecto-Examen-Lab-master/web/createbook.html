@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/utils/include.js"></script>
+
+    <script src="js/header.js" type="module"></script>
+    <script src="js/createbook.js" type="module"></script>
+
+    <title>Examen IISSI-2</title>
+</head>
+
+<body>
+    <div id="page-header"></div>
+
+    <!-- El título se actualizará dinámicamente según si es edición o creación -->
+    <h2 class="page-title text-center" id="page-title">Registra tu nuevo libro: </h2>
+
+    <div id="container">
+
+        <div id="errors"></div>
+
+        <form id="form-group">
+            <!-- Campo oculto para el ID del libro (solo para edición) -->
+            <input type="hidden" id="input-bookId" name="bookId">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-userId" class="mb-3">ID de usuario:</label>
+                        <input type="text" id="input-userId" name="userId" placeholder="Introduce tu ID de usuario..." class="form-control" required readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-title" class="mb-3">Título</label>
+                        <input type="text" placeholder="Título del libro..." name="title" id="input-title"
+                            class="form-control mt-2" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-author" class="mb-3">Autor:</label>
+                        <input type="text" placeholder="Autor del libro..." name="author" id="input-author"
+                            class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-releaseDate" class="mb-3">Fecha de salida:</label>
+                        <input type="date" name="releaseDate" id="input-releaseDate" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-numPages" class="mb-3">Número de páginas:</label>
+                        <input type="number" min="0" max="5000" step="1" id="input-numPages" name="numPages"
+                            class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-4">
+                    <div class="form-group">
+                        <label for="input-imageUrl" class="mb-3">URL:</label>
+                        <input type="text" id="input-imageUrl" name="imageUrl"
+                            placeholder="URL de la imagen de portada..." class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col text-center mt-4">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>

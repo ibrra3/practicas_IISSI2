@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery home</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="header-block">
+        </header>
+
+        <div class="row text-center">
+            <div class="col-md my-3">
+                <h3>Recent pictures</h3>
+            </div>
+            <div class="row text-center">
+                <div id="gallery"></div>
+            </div>
+        </div>
+
+        <footer id="footer-block">
+
+        </footer>
+    </div>
+
+    <script>
+        include("header.html", "#header-block");
+        include("footer.html", "#footer-block");
+        include("card_photo.html", "#card");
+    </script>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

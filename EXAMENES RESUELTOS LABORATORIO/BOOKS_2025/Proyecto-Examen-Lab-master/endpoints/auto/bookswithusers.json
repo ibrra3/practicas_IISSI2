@@ -1,0 +1,12 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'bookswithusers'",
+        "route": "/bookswithusers",
+        "method": "GET",
+        "sql": "SELECT * FROM bookswithusers",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

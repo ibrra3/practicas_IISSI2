@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery home</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header-block">
+        </header>
+
+
+        <div class="row text-center">
+            <div class="col-md my-3">
+                <h3>Recent pictures</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="photo_detail.html">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/dogs.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/pastor_aleman.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/pastor_aleman_running.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Samoyed</h5>
+                            <p class="card-text">A very good boy.</p>
+                            <p class="text-end">@user1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="photo_detail.html">
+                            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Samoyed</h5>
+                            <p class="card-text">A very good boy.</p>
+                            <p class="text-end">@user1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="photo_detail.html">
+                            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Samoyed</h5>
+                            <p class="card-text">A very good boy.</p>
+                            <p class="text-end">@user1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer-block">
+
+        </footer>
+    </div>
+
+    <script>
+        include("header.html", "#header-block");
+        include("footer.html", "#footer-block");
+        include("card_photo.html", "#card");
+    </script>
+</body>
+
+</html>

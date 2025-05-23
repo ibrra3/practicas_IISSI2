@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Example page</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="web\js\utils\include.js"></script>
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <!-- Librería axios para llamadas AJAX -->
+
+        <script src="js/index.js" type="module"></script>
+
+    </head>
+    <body class="dark">
+        <header class="container-fluid p-0">                                            <!--    HEADER & NAV BAR -->
+            <script>include ("Layout/header.html", "header");
+    </script>
+            <h4 class="text-center fw-light">
+                <i class="fa fa-clock-o"></i> Recent photos
+            </h4>
+        </header>
+        <!--
+        <h2>RECENT PICTURES</h2>
+        <a href="upload_pics.html" class="upload-link">Upload a new picture</a>
+       -->
+
+        <!---->
+        <div class="container">
+            <div id="dom-test"></div>
+            <div id="gallery">
+                <div id="card"></div>
+            </div>
+
+            <main class="container-fluid mt-2"> <!-- Our photos will be here -->
+                <aside class="row">
+                    <div class="col-sm-3 p-0">
+                        <small><i class="fa fa-hand-pointer-o"> Click photos for
+                                details!</i></small>
+                    </div>
+                    <div id="errors" class="col-sm-9 p-0"></div>
+                    <!-- Div de errores para peticiones Ajax a la API REST -->
+                </aside>
+                <section id="divGallery" class>
+                    <!-- Our rendered photos will be here -->
+                </section>
+            </main>
+
+            <script>include ("Layout/footer.html", "body");</script>
+        </body>
+    </html>

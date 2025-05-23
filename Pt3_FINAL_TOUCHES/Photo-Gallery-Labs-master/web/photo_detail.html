@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="web\js\utils\include.js"></script> <!-- INCLUDE JS		IMPORTANTE ANIADIR PARA EL JS FILE -->
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="js/photo_detail.js" type="module"></script>	<!-- JS FILE 		IMPORTANTE ANIADIR PARA EL JS FILE -->
+		
+		<script src="js/libs/axios.min.js"></script> <!-- Librería axios para llamadas AJAX 		IMPORTANTE ANIADIR PARA EL JS FILE -->
+
+	
+</header>
+
+</head>
+<body class="dark">
+  <header class="container-fluid p-0">                                            <!--    HEADER  & NAV BAR -->
+            <script>include ("Layout/header.html", "header");
+    </script>
+	<h4 class="text-center fw-light" style="color: white;">
+    <i class="fa fa-camera-retro"></i> Photo Detail
+</h4>
+</header>
+<main class="container flex-grow-1 d-flex flex-column">
+    <aside class="row">
+        <div id="errors" class="form-group col-sm"></div>
+    </aside>
+ <section class="row d-flex align-items-end" style="min-height: 400px;">
+    <div id="photo-details" class="col-md-6 p-2 bg-light border boder-secondary rounded">
+        <!-- Photo details will be here -->
+    </div>
+    <div id="photo-edition" class="col-md-6 mt-4 d-flex flex-column justify-content-end">
+        <div class="com-md-12">
+            <button class="btn btn-secondary col-md-3 mr-1" onclick="window.history.back()">
+                <i class="fa fa-undo mr-2"></i>Back
+            </button>
+            <button class="btn btn-secondary col-md-3 mr-1" id="button-edit">
+                <i class="fa fa-edit mr-2"></i>Edit
+            </button>
+            <button class="btn btn-danger col-md-3" id="button-delete">
+                <i class="fa fa-trash mr-2"></i>Delete
+            </button>
+            <form class="col-md-12 mt-2">
+                <select id="rating-input" name="rating" class="form-control col-md-8 text-success fw-bold">
+                    <option value="0">(0)☆☆☆☆☆</option>
+                    <option value="1">(1)★☆☆☆☆</option>
+                    <option value="2">(2)★★☆☆☆</option>
+                    <option value="3">(3)★★★☆☆</option>
+                    <option value="4">(4)★★★★☆</option>
+                    <option value="5">(5)★★★★★</option>
+                </select>
+                <button type="submit" class="btn btn-success col-md-3 mt-2">
+                    <i class="fa fa-send mr-2"></i>Rate
+                </button>
+            </form>	
+        </div>
+    </div>
+</section>
+</main>
+</html >

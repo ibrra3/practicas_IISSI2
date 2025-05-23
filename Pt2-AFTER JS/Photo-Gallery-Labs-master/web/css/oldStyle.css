@@ -1,0 +1,351 @@
+
+
+/*_______________________________________________________________________*/
+
+/*CSS RESET ---------------------------    RESET   -------------------*/
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Important: Include padding/border in width */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*_______________________________________________________________________*/
+/*_______________________________________________________________________*/
+div.photo-block{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5%;
+}
+
+div.photo-title{
+    font-size: 140%;
+    font-family: Arial;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+div.photo-score{
+    font-family: monospace;
+}
+
+img.photo-image{ /* para que se vea entera en pantallas pequenias*/
+    height: auto; 
+    width:100%;
+}
+
+body.dark{ /*this adds background color and text color*/
+    background-color: rgb(10, 17, 46);
+    color: rgb(255, 255, 255);
+    padding: 0%;
+    margin: 0%;
+}
+.gallery-container{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding:0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+/*__________________  FORMULARIO ___________________________________*/
+input,select {
+    background-color: rgb(4, 163, 102);
+    border-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.input-group > label { /*targets all label elements that are direct children of elements with the class input-group*/
+    display: inline-block;
+    width : 200px;
+    text-align: left;
+}
+
+.input-group{  /* distance between FORMULARIO items */
+    margin-bottom: 0.7em;
+    
+/*The em unit is relative to the font size of the element, so 0.5em is equal to half the element's font size.*/    
+}
+form.formulario{
+    border: 1px solid red;
+}
+div.formulario{
+    padding-top: 2%;
+}
+/*_____________________________    HEADER   ______________________________________*/
+.title-block{    
+    border: 7px solid black;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #5a0000;
+    width: 100%;
+    margin: 0%;
+}
+    /*el ultimo y los dos siguientes afectan el header.html----------------------------                   HEADER   -------------------------------------*/
+
+    #main-head{
+        background-color: #5a0000;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #title {
+    font-size: 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    margin-bottom: 0;
+    font-weight:600;
+
+}
+
+#subtitle {
+    font-size: 30px;
+    font-style: italic;
+    color: #ffffff;
+    font-family: monospace;
+    padding-bottom: 0%;
+    font-weight: 500;
+}
+
+div.bar{
+    border: 5px solid #000000 ;
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 5%;
+    background-color: rgb(10, 17, 46);
+    display: block;
+
+}
+
+div.bar>a{
+
+    font-size: 30px;
+    text-align: center;
+    color:rgb(248, 1, 1);
+   padding: 5px;
+    font-family: monospace;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 120px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#header-nav-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*           THIS AFFECTS THE COMMENTED LINES AT THE START OF BODY IN INDEX . THE RECENT PICTURE AND THE UPLOAD A NEW PICTURE LINKS
+.upload-link{
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}*/
+
+
+/*______________________________________   LOGIN      ______________________*/
+/*CODE FOR LOGIN , COPPIED FROM BOOTSTRAP----------------------------------------------------------------------------------*/
+div.login{
+    text-align: center;
+    margin: 1% auto;
+}
+
+label.mr-1{ /*affects the word Gender*/
+    font-size: larger;
+}
+
+label.btn-outline-secondary {
+    width: auto;
+    font-size: larger;
+}
+
+
+div.form-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 100%;
+    background-color: #0c171f;
+    overflow: hidden;
+}
+
+
+
+
+.form-holder {
+      text-align: center;
+      min-height: 100vh;
+      align-items: ;
+    
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.form-content .form-items {
+    border: 6px solid #b40505; /*this line single handedly creates a 
+                    border surrounding the form items div*/
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 70px;   /* eso hace que el border sea curvo */
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #f8f8f8;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #b90303;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+.btn-primary{
+    margin-left:1%;
+    width: 150px;
+}
+
+/*__________________________________________________________________*/

@@ -1,0 +1,85 @@
+<head>
+    <title>Example page - Login</title> <link rel="icon"
+        href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css"> <link rel="stylesheet"
+        href="/css/bootstrap.min.css"> <link rel="stylesheet"
+        href="/css/font-awesome.min.css"> <script
+        src="web/js/utils/include.js"></script> <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/js/libs/bootstrap.min.js"></script>
+</head>
+<body class="form-body"> 
+    <header class="container-fluid p-0">                                            <!--    HEADER  & NAV BAR -->
+            <script>include ("Layout/header.html", "header");
+    </script>
+
+    <div class="log-body">
+        <div class="login">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="log-holder" id="login-form-container">
+                        <div class="log-content">
+                            <div class="log-items">
+                                <h3>Login</h3>
+                                <p>Fill in the data below.</p>
+
+                                <form class="requires-validation">
+                                    <div class="col-md-12 mb-3">
+                                        <input class="form-control" type="text"
+                                            name="name"
+                                            placeholder="Username or Email"
+                                            required>
+                                        <div class="valid-feedback">Field is
+                                            valid!</div>
+                                        <div class="invalid-feedback">Field
+                                            cannot be blank!</div>
+                                    </div>
+
+                                    <div class="col-md-12 mb-3">
+                                        <input class="form-control"
+                                            type="password"
+                                            name="password"
+                                            placeholder="Password" required>
+                                        <div class="valid-feedback">Password
+                                            field is valid!</div>
+                                        <div class="invalid-feedback">Password
+                                            field cannot be blank!</div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <select class="form-select mt-3"
+                                            required>
+                                            <option selected disabled
+                                                value>Position</option>
+                                            <option
+                                                value="jweb">Student</option>
+                                            <option
+                                                value="sweb">Teacher</option>
+                                            <option
+                                                value="pmanager">Other</option>
+                                        </select>
+                                        <div class="valid-feedback">You selected
+                                            a
+                                            position!</div>
+                                        <div class="invalid-feedback">Please
+                                            select
+                                            a
+                                            position!</div>
+                                    </div>
+
+                                    <div class="log-button mt-3 text-center">
+                                        <button id="submit" type="submit"
+                                            class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+       <script>include ("Layout/footer.html", "body");</script>
+  
+</body>
